@@ -1,17 +1,4 @@
-SQL> 
-SQL> 
-SQL> 
-SQL> DROP TABLE Product CASCADE CONSTRAINTS;
 
-Table dropped.
-
-SQL> DROP TABLE Category CASCADE CONSTRAINTS;
-
-Table dropped.
-
-SQL> 
-SQL> 
-SQL> 
 SQL> CREATE TABLE Category (
   2  	 Category_ID NUMBER PRIMARY KEY,
   3  	 Category_Name VARCHAR2(50) UNIQUE NOT NULL,
@@ -20,8 +7,6 @@ SQL> CREATE TABLE Category (
 
 Table created.
 
-SQL> 
-SQL> 
 SQL> 
 SQL> INSERT INTO Category VALUES
   2  (1, 'Electronics', 'Electronic products');
