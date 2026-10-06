@@ -1,13 +1,4 @@
 SQL> 
-SQL> DROP TABLE Order_Details CASCADE CONSTRAINTS;
-
-Table dropped.
-
-SQL> DROP TABLE Orders CASCADE CONSTRAINTS;
-
-Table dropped.
-
-SQL> 
 SQL> CREATE TABLE Orders (
   2  	 Order_ID NUMBER PRIMARY KEY,
   3  	 Customer_ID NUMBER,
