@@ -1,9 +1,4 @@
 SQL> 
-SQL> DROP TABLE Payment CASCADE CONSTRAINTS;
-
-Table dropped.
-
-SQL> 
 SQL> CREATE TABLE Payment (
   2  	 Payment_ID NUMBER PRIMARY KEY,
   3  	 Order_ID NUMBER,
