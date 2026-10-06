@@ -1,13 +1,4 @@
 SQL> 
-SQL> DROP TABLE Inventory CASCADE CONSTRAINTS;
-
-Table dropped.
-
-SQL> DROP TABLE Seller CASCADE CONSTRAINTS;
-
-Table dropped.
-
-SQL> 
 SQL> CREATE TABLE Seller (
   2  	 Seller_ID NUMBER PRIMARY KEY,
   3  	 Seller_Name VARCHAR2(100) NOT NULL,
