@@ -1,13 +1,4 @@
 SQL> 
-SQL> DROP TABLE Rating CASCADE CONSTRAINTS;
-
-Table dropped.
-
-SQL> DROP TABLE Review CASCADE CONSTRAINTS;
-
-Table dropped.
-
-SQL> 
 SQL> CREATE TABLE Review (
   2  	 Review_ID NUMBER PRIMARY KEY,
   3  	 Customer_ID NUMBER,
@@ -62,9 +53,6 @@ SQL> INSERT INTO Review VALUES
 
 1 row created.
 
-SQL> 
-SQL> 
-SQL> 
 SQL> COMMIT;
 
 Commit complete.
@@ -99,9 +87,6 @@ SQL> INSERT INTO Rating VALUES
 
 1 row created.
 
-SQL> 
-SQL> 
-SQL> 
 SQL> COMMIT;
 
 Commit complete.
