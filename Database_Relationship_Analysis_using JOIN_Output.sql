@@ -16,10 +16,7 @@ SQL> SELECT c.ID, c.NAME AS CUSTOMER_NAME,
          5 Hardik                                405 24-OCT-26          650 Placed                                                                                                                      
 
 5 rows selected.
-
-SQL> 
-SQL> 
-SQL> 
+ 
 SQL> SELECT o.ORDER_ID, o.ORDER_DATE,
   2  	    o.TOTAL_AMOUNT, o.ORDER_STATUS,
   3  	    p.PAYMENT_ID, p.PAYMENT_MODE,
@@ -39,10 +36,7 @@ SQL> SELECT o.ORDER_ID, o.ORDER_DATE,
        405 24-OCT-26          650 Placed                                605 UPI                            24-OCT-26            650 Pending                                                             
 
 5 rows selected.
-
-SQL> 
-SQL> 
-SQL> 
+ 
 SQL> SELECT p.PRODUCT_ID, p.PRODUCT_NAME,
   2  	    p.PRICE, od.ORDER_ID,
   3  	    od.QUANTITY, od.UNIT_PRICE,
@@ -62,9 +56,6 @@ PRODUCT_ID PRODUCT_NAME                                                         
 
 5 rows selected.
 
-SQL> 
-SQL> 
-SQL> 
 SQL> SELECT c.ID, c.NAME AS CUSTOMER_NAME,
   2  	    o.ORDER_ID, o.ORDER_DATE,
   3  	    o.TOTAL_AMOUNT, o.ORDER_STATUS
@@ -83,9 +74,6 @@ SQL> SELECT c.ID, c.NAME AS CUSTOMER_NAME,
 
 5 rows selected.
 
-SQL> 
-SQL> 
-SQL> 
 SQL> SELECT o.ORDER_ID, o.ORDER_DATE,
   2  	    o.TOTAL_AMOUNT, o.ORDER_STATUS,
   3  	    c.ID AS CUSTOMER_ID,
@@ -105,10 +93,7 @@ SQL> SELECT o.ORDER_ID, o.ORDER_DATE,
        405 24-OCT-26          650 Placed                                   5 Hardik                                 27 Bhopal                                                                           
 
 5 rows selected.
-
-SQL> 
-SQL> 
-SQL> 
+    
 SQL> SELECT o.ORDER_ID, c.NAME AS CUSTOMER_NAME,
   2  	    o.ORDER_DATE, p.PRODUCT_NAME,
   3  	    od.QUANTITY, od.UNIT_PRICE,
@@ -144,10 +129,7 @@ Placed
                                                                                                                                                                                                         
 
 5 rows selected.
-
-SQL> 
-SQL> 
-SQL> 
+ 
 SQL> SELECT c.ID, c.NAME AS CUSTOMER_NAME,
   2  	    o.ORDER_ID, o.ORDER_DATE,
   3  	    o.TOTAL_AMOUNT, o.ORDER_STATUS
@@ -165,10 +147,7 @@ SQL> SELECT c.ID, c.NAME AS CUSTOMER_NAME,
          5 Hardik                                405 24-OCT-26          650 Placed                                                                                                                      
 
 5 rows selected.
-
-SQL> 
-SQL> 
-SQL> 
+ 
 SQL> SELECT c.ID, c.NAME AS CUSTOMER_NAME,
   2  	    o.ORDER_ID, o.ORDER_DATE,
   3  	    o.TOTAL_AMOUNT, o.ORDER_STATUS,
@@ -191,9 +170,6 @@ SQL> SELECT c.ID, c.NAME AS CUSTOMER_NAME,
 
 5 rows selected.
 
-SQL> 
-SQL> 
-SQL> 
 SQL> SELECT c.ID, c.NAME AS CUSTOMER_NAME,
   2  	    o.ORDER_ID, o.ORDER_DATE,
   3  	    p.PRODUCT_NAME, od.QUANTITY,
@@ -231,9 +207,6 @@ TOTAL_AMOUNT ORDER_STATUS
 
 5 rows selected.
 
-SQL> 
-SQL> 
-SQL> 
 SQL> SELECT o.ORDER_ID, o.ORDER_DATE,
   2  	    o.TOTAL_AMOUNT, o.ORDER_STATUS,
   3  	    p.PAYMENT_ID, p.PAYMENT_MODE,
@@ -254,6 +227,5 @@ SQL> SELECT o.ORDER_ID, o.ORDER_DATE,
 
 5 rows selected.
 
-SQL> 
-SQL> 
+ 
 SQL> SPOOL OFF
