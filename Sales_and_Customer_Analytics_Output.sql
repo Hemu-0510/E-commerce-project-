@@ -1,5 +1,3 @@
-SQL> 
-SQL> 
 SQL> SELECT COUNT(*) AS TOTAL_ORDERS
   2  FROM Orders;
 
@@ -8,9 +6,7 @@ TOTAL_ORDERS
            5                                                                                                                                                                                            
 
 1 row selected.
-
-SQL> 
-SQL> 
+  
 SQL> SELECT SUM(TOTAL_AMOUNT) AS TOTAL_SALES
   2  FROM Orders;
 
@@ -20,8 +16,6 @@ TOTAL_SALES
 
 1 row selected.
 
-SQL> 
-SQL> 
 SQL> SELECT AVG(TOTAL_AMOUNT) AS AVERAGE_ORDER_AMOUNT
   2  FROM Orders;
 
@@ -31,8 +25,6 @@ AVERAGE_ORDER_AMOUNT
 
 1 row selected.
 
-SQL> 
-SQL> 
 SQL> SELECT MIN(TOTAL_AMOUNT) AS LOWEST_ORDER_AMOUNT
   2  FROM Orders;
 
@@ -41,9 +33,7 @@ LOWEST_ORDER_AMOUNT
                 650                                                                                                                                                                                     
 
 1 row selected.
-
-SQL> 
-SQL> 
+ 
 SQL> SELECT MAX(TOTAL_AMOUNT) AS HIGHEST_ORDER_AMOUNT
   2  FROM Orders;
 
@@ -53,8 +43,6 @@ HIGHEST_ORDER_AMOUNT
 
 1 row selected.
 
-SQL> 
-SQL> 
 SQL> SELECT SUM(TOTAL_AMOUNT) AS TOTAL_SALES
   2  FROM Orders;
 
@@ -63,9 +51,7 @@ TOTAL_SALES
       84748                                                                                                                                                                                             
 
 1 row selected.
-
-SQL> 
-SQL> 
+ 
 SQL> SELECT c.ID AS CUSTOMER_ID,
   2  	    c.NAME AS CUSTOMER_NAME,
   3  	    SUM(o.TOTAL_AMOUNT) AS TOTAL_PURCHASE_AMOUNT
@@ -85,9 +71,6 @@ CUSTOMER_ID CUSTOMER_NAME        TOTAL_PURCHASE_AMOUNT
 
 5 rows selected.
 
-SQL> 
-SQL> 
-SQL> 
 SQL> SELECT c.ID AS CUSTOMER_ID,
   2  	    c.NAME AS CUSTOMER_NAME,
   3  	    SUM(o.TOTAL_AMOUNT) AS TOTAL_PURCHASE_AMOUNT
@@ -107,8 +90,6 @@ CUSTOMER_ID CUSTOMER_NAME        TOTAL_PURCHASE_AMOUNT
 
 5 rows selected.
 
-SQL> 
-SQL> 
 SQL> SELECT p.PRODUCT_ID,
   2  	    p.PRODUCT_NAME,
   3  	    SUM(od.QUANTITY) AS TOTAL_QUANTITY_SOLD
@@ -128,8 +109,6 @@ PRODUCT_ID PRODUCT_NAME                                       TOTAL_QUANTITY_SOL
 
 5 rows selected.
 
-SQL> 
-SQL> 
 SQL> SELECT p.PRODUCT_ID,
   2  	    p.PRODUCT_NAME,
   3  	    SUM(od.QUANTITY) AS TOTAL_QUANTITY_SOLD,
@@ -150,9 +129,6 @@ PRODUCT_ID PRODUCT_NAME                                       TOTAL_QUANTITY_SOL
 
 5 rows selected.
 
-SQL> 
-SQL> 
-SQL> 
 SQL> SELECT c.CATEGORY_ID,
   2  	    c.CATEGORY_NAME,
   3  	    SUM(od.QUANTITY) AS TOTAL_QUANTITY_SOLD,
@@ -174,9 +150,6 @@ CATEGORY_ID CATEGORY_NAME                  TOTAL_QUANTITY_SOLD TOTAL_CATEGORY_SA
 
 4 rows selected.
 
-SQL> 
-SQL> 
-SQL> 
 SQL> SELECT c.ID AS CUSTOMER_ID,
   2  	    c.NAME AS CUSTOMER_NAME,
   3  	    o.ORDER_ID,
